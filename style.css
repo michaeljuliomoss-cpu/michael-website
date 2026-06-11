@@ -112,7 +112,7 @@ p { font-size: 1rem; line-height: 1.7; }
 .mobile-menu a:hover { background: var(--primary-light); }
 .mobile-menu .nav-cta { margin-top: 12px; text-align: center; justify-content: center; }
 .mobile-menu-close { position: absolute; top: 18px; right: 18px; background: none; border: none; cursor: pointer; padding: 6px; color: var(--text-muted); }
-@media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: block; } .mobile-menu { display: flex; } .mobile-menu-overlay { display: block; } }
+@media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: block; } .mobile-menu { display: flex; } .mobile-menu-overlay { display: block; } .navbar { background: rgba(255, 255, 255, 0.95); } }
 
 /* === Hero === */
 .hero {
