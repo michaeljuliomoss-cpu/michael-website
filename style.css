@@ -50,7 +50,7 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
 h1, h2, h3, h4 { font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
-h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+h1 { font-size: clamp(2.8rem, 7vw, 5rem); }
 h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
 h3 { font-size: clamp(1.1rem, 2vw, 1.3rem); }
 p { font-size: 1rem; line-height: 1.7; }
@@ -90,7 +90,7 @@ p { font-size: 1rem; line-height: 1.7; }
 .nav-cta:hover { background: var(--tropical-dark) !important; transform: translateY(-1px); color: #fff !important; }
 
 /* === Mobile Menu === */
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); z-index: 101; }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); z-index: 101; } .hamburger svg { stroke: var(--text); }
 .hamburger svg { width: 26px; height: 26px; }
 .mobile-menu-overlay {
   display: none; position: fixed; inset: 0;
@@ -124,7 +124,7 @@ p { font-size: 1rem; line-height: 1.7; }
 .hero-video-bg video { width: 100%; height: 100%; object-fit: cover; }
 .hero-overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(248,250,251,0.55) 0%, rgba(248,250,251,0.35) 50%, rgba(224,242,254,0.2) 100%);
+  background: linear-gradient(180deg, rgba(248,250,251,0.45) 0%, rgba(248,250,251,0.25) 50%, rgba(224,242,254,0.15) 100%);
 }
 .hero-content { position: relative; z-index: 2; text-align: center; max-width: 780px; padding: 0 24px; }
 .hero-badge {
@@ -138,11 +138,12 @@ p { font-size: 1rem; line-height: 1.7; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 .hero h1 { margin-bottom: 20px; }
 .hero h1 .name {
-  display: inline-block; padding: 6px 22px;
-  background: linear-gradient(135deg, var(--primary-light), #bae6fd);
+  display: inline-block; padding: 8px 28px;
+  background: rgba(255,255,255,0.9);
   border-radius: var(--radius-lg);
+  color: var(--text);
 }
-.hero-subtitle { font-size: 1.1rem; color: var(--text-muted); max-width: 540px; margin: 0 auto 36px; }
+.hero-subtitle { font-size: 1.1rem; color: var(--text); max-width: 540px; margin: 0 auto 36px; font-weight: 500; text-shadow: 0 1px 3px rgba(255,255,255,0.8); }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 48px; }
 .hero-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
 .hero-stat h3 { font-size: 1.6rem; font-weight: 800; color: var(--tropical-dark); }
