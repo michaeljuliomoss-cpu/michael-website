@@ -90,7 +90,7 @@ p { font-size: 1rem; line-height: 1.7; }
 .nav-cta:hover { background: var(--tropical-dark) !important; transform: translateY(-1px); color: #fff !important; }
 
 /* === Mobile Menu === */
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); z-index: 101; } .hamburger svg { stroke: var(--text); }
+.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); z-index: 101; }
 .hamburger svg { width: 26px; height: 26px; }
 .mobile-menu-overlay {
   display: none; position: fixed; inset: 0;
