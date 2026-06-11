@@ -70,6 +70,7 @@ p { font-size: 1rem; line-height: 1.7; }
 }
 .navbar.scrolled { box-shadow: var(--shadow-sm); }
 .navbar .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+.navbar .container > * { flex-shrink: 0; }
 .nav-brand { font-size: 1.2rem; font-weight: 800; color: var(--text); }
 .nav-brand span { color: var(--tropical); }
 .nav-links { display: flex; align-items: center; gap: 4px; }
@@ -90,7 +91,7 @@ p { font-size: 1rem; line-height: 1.7; }
 .nav-cta:hover { background: var(--tropical-dark) !important; transform: translateY(-1px); color: #fff !important; }
 
 /* === Mobile Menu === */
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--text); z-index: 101; }
+.hamburger { display: none; background: rgba(255,255,255,0.9); border: 1px solid var(--border); cursor: pointer; padding: 10px; color: var(--text); z-index: 101; border-radius: var(--radius-sm); }
 .hamburger svg { width: 26px; height: 26px; }
 .mobile-menu-overlay {
   display: none; position: fixed; inset: 0;
