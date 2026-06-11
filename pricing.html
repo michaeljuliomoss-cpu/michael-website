@@ -7,50 +7,40 @@
   <title>Pricing — Michael Moss | Websites for Businesses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="index.html" class="nav-brand">M<span>.</span>Moss</a>
       <div class="nav-links">
         <a href="about.html">About</a>
         <a href="portfolio.html">Projects</a>
+        <a href="pricing.html" style="color:var(--text);background:var(--primary-light);">Pricing</a>
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Hire Me</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </nav>
-
-  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="about.html" class="mobile-link">About</a>
-    <a href="portfolio.html" class="mobile-link">Projects</a>
-    <a href="contact.html" class="mobile-link">Contact</a>
+    <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" width="28" height="28"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    <a href="about.html">About</a><a href="portfolio.html">Projects</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
     <a href="contact.html" class="nav-cta">Hire Me</a>
   </div>
 
-  <!-- Page Header -->
   <header class="page-header">
-    <div class="container">
-      <h1>Pricing</h1>
-      <p>Straightforward pricing with no hidden fees. Pick the plan that fits your business.</p>
-    </div>
+    <div class="container"><h1>Pricing</h1><p>Straightforward pricing with no hidden fees. Pick the plan that fits your business.</p></div>
   </header>
 
-  <!-- Pricing Cards -->
   <section class="section pricing-section">
     <div class="container">
       <div class="pricing-grid">
-        <!-- Package 1 -->
         <div class="pricing-card fade-in">
           <p class="package-num">1. Package</p>
           <h3>The Digital Business Card</h3>
@@ -65,24 +55,20 @@
           </ul>
           <a href="contact.html" class="btn btn-primary">Get the Card →</a>
         </div>
-
-        <!-- Package 2 -->
         <div class="pricing-card featured fade-in">
           <p class="package-num">2. Package</p>
           <h3>The Brochure</h3>
           <div class="price-amount">$300 – $400</div>
-          <p class="description">More sections (or a few light pages) when one scroll is not enough to sell you.</p>
+          <p class="description">More sections when one scroll is not enough to sell you.</p>
           <p class="audience">Same crowd as the Card — more room to sell.</p>
           <ul class="pricing-features">
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Deeper story + services</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Testimonials / gallery room</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Testimonials / gallery</li>
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Form + call on every path</li>
             <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>On-page SEO</li>
           </ul>
           <a href="contact.html" class="btn btn-primary">Get the Brochure →</a>
         </div>
-
-        <!-- Package 3 -->
         <div class="pricing-card fade-in">
           <p class="package-num">3. Package</p>
           <h3>The Service Engine</h3>
@@ -99,115 +85,48 @@
         </div>
       </div>
 
-      <!-- Payment Info -->
-      <div class="fade-in" style="max-width: 600px; margin: 40px auto 0; padding: 24px; background: var(--bg-white); border: 2px solid var(--text); border-radius: var(--radius); text-align: center; box-shadow: var(--shadow);">
-        <p style="font-size: 0.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">How You Pay</p>
-        <p style="font-size: 0.9rem; color: var(--text-muted);">
-          <strong>50% deposit</strong> — Locks your slot + domain/hosting setup. Build starts after it clears.<br>
-          <strong>50% final</strong> — After you approve the design. Your domain goes live when this is paid.
-        </p>
+      <div class="fade-in" style="max-width:600px;margin:40px auto 0;padding:28px;background:var(--bg-card);border:2px solid var(--text);border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow);">
+        <p style="font-size:0.8rem;font-weight:900;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">How You Pay</p>
+        <p style="font-size:0.9rem;color:var(--text-light);line-height:1.7;"><strong style="color:var(--text);">50% deposit</strong> — Locks your slot + domain/hosting. Build starts after it clears.<br><strong style="color:var(--text);">50% final</strong> — After you approve the design. Your domain goes live when paid.</p>
       </div>
     </div>
   </section>
 
-  <!-- Additional Services -->
-  <section class="section" style="background: var(--accent); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <section class="section" style="background: linear-gradient(180deg, #e0f2fe 0%, var(--bg) 100%); border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
     <div class="container">
-      <div class="section-header">
-        <h2>Ongoing Services</h2>
-        <p>Monthly plans to keep your business running smooth online.</p>
-      </div>
+      <div class="section-header"><h2>Ongoing Services</h2><p>Monthly plans to keep your business running smooth online.</p></div>
       <div class="pricing-grid">
         <div class="pricing-card fade-in">
-          <p class="package-num">Maintenance</p>
-          <h3>Keep It Fresh</h3>
-          <div class="price-amount">$50 – $200<span>/mo</span></div>
-          <p class="description">Updates, security, backups, and content changes. Peace of mind for your site.</p>
-          <ul class="pricing-features">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Software updates</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Security monitoring</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Regular backups</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Content changes</li>
-          </ul>
+          <p class="package-num">Maintenance</p><h3>Keep It Fresh</h3><div class="price-amount">$50 – $200<span>/mo</span></div>
+          <p class="description">Updates, security, backups, and content changes.</p>
+          <ul class="pricing-features"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Software updates</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Security monitoring</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Regular backups</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Content changes</li></ul>
           <a href="contact.html" class="btn btn-secondary">Learn More</a>
         </div>
         <div class="pricing-card fade-in">
-          <p class="package-num">AI & Automation</p>
-          <h3>Work Smarter</h3>
-          <div class="price-amount">$150 – $500<span>/mo</span></div>
-          <p class="description">AI chatbots, automated marketing funnels, CRM systems, and custom tools.</p>
-          <ul class="pricing-features">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>AI chatbot (24/7)</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Marketing automation</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>CRM integration</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Custom dashboards</li>
-          </ul>
+          <p class="package-num">AI & Automation</p><h3>Work Smarter</h3><div class="price-amount">$150 – $500<span>/mo</span></div>
+          <p class="description">AI chatbots, automated funnels, CRM systems, and custom tools.</p>
+          <ul class="pricing-features"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>AI chatbot (24/7)</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Marketing automation</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>CRM integration</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Custom dashboards</li></ul>
           <a href="contact.html" class="btn btn-secondary">Learn More</a>
         </div>
         <div class="pricing-card fade-in">
-          <p class="package-num">Marketing</p>
-          <h3>Get Found</h3>
-          <div class="price-amount">$200<span>/mo + ads</span></div>
+          <p class="package-num">Marketing</p><h3>Get Found</h3><div class="price-amount">$200<span>/mo + ads</span></div>
           <p class="description">Meta ads, Google Ads, lead capture funnels, and referral programs.</p>
-          <ul class="pricing-features">
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Meta / Instagram ads</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Google Ads management</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Lead capture funnels</li>
-            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Weekly reports</li>
-          </ul>
+          <ul class="pricing-features"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Meta / Instagram ads</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Google Ads management</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Lead capture funnels</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>Weekly reports</li></ul>
           <a href="contact.html" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta-section">
-    <h2>
-      <span>Ready to</span>
-      <span class="highlight">get started?</span>
-    </h2>
+    <h2><span>Ready to</span><span class="highlight">get started?</span></h2>
     <p>Pick a package or tell me what you need. Free consultation.</p>
-    <div class="cta-buttons">
-      <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch →</a>
-      <a href="portfolio.html" class="btn btn-secondary btn-lg">See Projects</a>
-    </div>
+    <div class="cta-buttons"><a href="contact.html" class="btn btn-primary btn-lg">Get In Touch →</a><a href="portfolio.html" class="btn btn-secondary btn-lg">See Projects</a></div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <a href="index.html" class="nav-brand">M<span>.</span>Moss</a>
-        <div class="footer-contact">
-          <a href="mailto:michaeljuliomoss@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/></svg>
-            michaeljuliomoss@gmail.com
-          </a>
-          <a href="https://wa.me/12424478109" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg>
-            +1 (242) 447-8109
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Michael Moss. Crafted with passion.</p>
-        <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="pricing.html">Services</a>
-          <a href="portfolio.html">Projects</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container"><div class="footer-content"><a href="index.html" class="nav-brand">M<span>.</span>Moss</a><div class="footer-contact"><a href="mailto:michaeljuliomoss@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/></svg> michaeljuliomoss@gmail.com</a><a href="https://wa.me/12424478109" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg> +1 (242) 447-8109</a></div></div><div class="footer-bottom"><p>© 2026 Michael Moss. Crafted with passion in Nassau, Bahamas.</p><div class="footer-links"><a href="about.html">About</a><a href="pricing.html">Services</a><a href="portfolio.html">Projects</a><a href="contact.html">Contact</a></div></div></div></footer>
 
-  <!-- WhatsApp FAB -->
-  <a href="https://wa.me/12424478109?text=Hi!%20I'm%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Contact via WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-  </a>
+  <a href="https://wa.me/12424478109?text=Hi!%20I'm%20interested%20in%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Contact via WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
   <script src="main.js"></script>
 </body>
