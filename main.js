@@ -158,9 +158,16 @@
     });
   }
 
-  // --- Video fallback: if video fails to load, show poster ---
+  // --- Video autoplay with fallback ---
   var heroVideo = document.getElementById('heroVideo');
   if (heroVideo) {
+    var playPromise = heroVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function() {
+        heroVideo.muted = true;
+        heroVideo.play();
+      });
+    }
     heroVideo.addEventListener('error', function() {
       this.style.display = 'none';
     });

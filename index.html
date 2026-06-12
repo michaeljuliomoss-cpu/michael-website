@@ -51,46 +51,18 @@
   <!-- Hero Section with Video Background -->
   <section class="hero">
     <div class="hero-video-bg">
-      <video autoplay muted loop playsinline poster="images/hero-clouds-blue.jpg" id="heroVideo">
+      <video autoplay muted loop playsinline preload="auto" poster="images/hero-clouds-blue.jpg" id="heroVideo">
         <source src="images/hero-clouds-blue.mp4" type="video/mp4">
       </video>
-      <!-- no overlay -->
     </div>
     <div class="hero-content">
-      <div class="hero-badge fade-in">
-        <span class="dot"></span>
-        Websites for businesses
-      </div>
-      <h1 class="fade-in">
-        <span class="name">Michael Moss</span>
-      </h1>
-      <p class="hero-subtitle fade-in">
-        Sites that work. Built for real businesses in Nassau and beyond — mobile-first, lead-focused, no fluff.
-      </p>
+      <p class="hero-subtitle fade-in">Websites for businesses in Nassau, Bahamas</p>
+      <h1 class="fade-in">Michael Moss</h1>
+      <p class="hero-desc fade-in">Sites that work. Built for real businesses — mobile-first, lead-focused, no fluff.</p>
       <div class="hero-buttons fade-in">
         <a href="contact.html" class="btn btn-primary btn-lg">Work With Me</a>
         <a href="pricing.html" class="btn btn-secondary btn-lg">Pricing & Options</a>
       </div>
-      <div class="hero-stats fade-in">
-        <div class="hero-stat">
-          <h3>7+</h3>
-          <p>Sites Launched</p>
-        </div>
-        <div class="hero-stat">
-          <h3>100%</h3>
-          <p>Satisfaction</p>
-        </div>
-        <div class="hero-stat">
-          <h3>2wk</h3>
-          <p>Avg. Delivery</p>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
     </div>
   </section>
 
@@ -99,14 +71,26 @@
     <div class="container">
       <div class="section-header">
         <h2>What I Do</h2>
-        <p>Everything your business needs to look great and generate leads online — from stunning websites to AI automation.</p>
+        <p>Websites, AI tools, and marketing — everything your business needs online.</p>
       </div>
       <div class="services-grid">
         <article class="service-card fade-in">
           <div class="service-icon">🌐</div>
-          <h3>Website Design</h3>
-          <p>Custom, mobile-first websites that capture leads and make your business look professional. From simple landing pages to full multi-page sites.</p>
+          <h3>Websites</h3>
+          <p>Custom mobile-first sites that capture leads and look professional. From simple landing pages to full e-commerce.</p>
           <span class="price">$400 – $2,000</span>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon">🤖</div>
+          <h3>AI & Automation</h3>
+          <p>AI chatbots, automated funnels, CRM systems, and custom tools. Work smarter, not harder.</p>
+          <span class="price">From $150/mo</span>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-icon">📣</div>
+          <h3>Marketing & Ads</h3>
+          <p>Meta ads, Google Ads, and lead capture funnels that actually convert. Full management and weekly reports.</p>
+          <span class="price">From $590/mo</span>
         </article>
         <article class="service-card fade-in">
           <div class="service-icon">📱</div>
@@ -121,23 +105,89 @@
           <span class="price">From $150</span>
         </article>
         <article class="service-card fade-in">
-          <div class="service-icon">✨</div>
-          <h3>Logo & Branding</h3>
-          <p>A memorable brand identity that sets you apart. Logo, colors, and visual guidelines.</p>
-          <span class="price">From $200</span>
-        </article>
-        <article class="service-card fade-in">
           <div class="service-icon">🔧</div>
           <h3>Maintenance</h3>
-          <p>Regular updates, security monitoring, backups, and small changes. Keep your site secure.</p>
+          <p>Regular updates, security, backups, and content changes. Keep your site running smooth.</p>
           <span class="price">$50 – $200/mo</span>
         </article>
-        <article class="service-card fade-in">
-          <div class="service-icon">🤖</div>
-          <h3>AI & Automation</h3>
-          <p>AI chatbots, automated marketing funnels, CRM systems, and custom tools. Work smarter, not harder.</p>
-          <span class="price">From $150/mo</span>
-        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Preview -->
+  <section class="section" style="background: var(--bg-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent Work</h2>
+        <p>Real sites built for real businesses in Nassau.</p>
+      </div>
+      <div class="portfolio-grid fade-in" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+        <a href="https://techguys242.com" target="_blank" rel="noopener noreferrer" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-techguys.jpg" alt="TechGuys.242 — Tech services website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">TechGuys.242</h4><p style="font-size:0.8rem;color:var(--text-muted);">Tech services · Lead-focused</p></div>
+        </a>
+        <a href="#" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-braidbytina.jpg" alt="Braid by Tina — Hair salon website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Braid by Tina</h4><p style="font-size:0.8rem;color:var(--text-muted);">Hair salon · Online booking</p></div>
+        </a>
+        <a href="#" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-shipsuite.jpg" alt="ShipSuite — Shipping logistics website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">ShipSuite</h4><p style="font-size:0.8rem;color:var(--text-muted);">Shipping · Logistics platform</p></div>
+        </a>
+        <a href="#" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-impactstudios.jpg" alt="Impact Studios — Creative studio website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">Impact Studios</h4><p style="font-size:0.8rem;color:var(--text-muted);">Creative studio · Portfolio</p></div>
+        </a>
+        <a href="#" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-kgvirgin.jpg" alt="KG Virgin Hair — Beauty product website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">KG Virgin Hair</h4><p style="font-size:0.8rem;color:var(--text-muted);">Beauty · E-commerce</p></div>
+        </a>
+        <a href="#" class="portfolio-card" style="display:block;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);transition:var(--transition);">
+          <div style="aspect-ratio:16/10;overflow:hidden;background:var(--dark);"><img src="images/project-velvetpetals.jpg" alt="VelvetPetals — Florist website" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'"></div>
+          <div style="padding:16px 20px;"><h4 style="font-size:0.95rem;font-weight:700;margin-bottom:4px;">VelvetPetals</h4><p style="font-size:0.8rem;color:var(--text-muted);">Florist · Online ordering</p></div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="portfolio.html" class="btn btn-secondary">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Preview -->
+  <section class="section" style="background: linear-gradient(180deg, var(--primary-light) 0%, var(--bg) 100%); border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple Pricing</h2>
+        <p>No hidden fees. Pick what fits your business.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <p class="package-num">Starter</p>
+          <h3>Digital Business Card</h3>
+          <div class="price-amount">$400</div>
+          <p class="description">One scroll: hero, services, form + click-to-call.</p>
+          <ul class="pricing-features"><li>✓ Single page</li><li>✓ Form + click-to-call</li><li>✓ Mobile-first</li><li>✓ Basic SEO</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <p class="package-num">Most Popular</p>
+          <h3>The Brochure</h3>
+          <div class="price-amount">$400 – $1,000</div>
+          <p class="description">More sections when one scroll isn't enough to sell you.</p>
+          <ul class="pricing-features"><li>✓ Multi-page site</li><li>✓ Testimonials / gallery</li><li>✓ Form + call on every path</li><li>✓ On-page SEO</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+        <div class="pricing-card fade-in">
+          <p class="package-num">Premium</p>
+          <h3>Service Engine</h3>
+          <div class="price-amount">$1,000 – $2,000</div>
+          <p class="description">Live booking, menus, or scheduling wired into the site.</p>
+          <ul class="pricing-features"><li>✓ Real integrations</li><li>✓ Booking / scheduling</li><li>✓ Premium build</li><li>✓ Full SEO + analytics</li></ul>
+          <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="pricing.html" class="btn btn-secondary">See Full Pricing →</a>
       </div>
     </div>
   </section>
@@ -149,7 +199,7 @@
       <span class="highlight">that sells you?</span>
     </h2>
     <p>
-      $400 · $400–$1,000 · $1,000–$2,000 — or tell me what you need.
+      Websites from $400 · AI & Automation from $150 · Marketing from $590/mo
       <a href="pricing.html">Services</a> has the fine print.
     </p>
     <div class="cta-buttons">
